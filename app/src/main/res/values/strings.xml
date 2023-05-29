@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+    <string name="logTxtCorreo">Correo Electronico</string>
+    <string name="logBtnIngresar">Ingregar</string>
+    <string name="logTxtClave">Clave</string>
+    <string name="logBtnSalir">Salir</string>
+    <string name="logChkRecordar">Recordar Sesion</string>
+    <string name="logLblRegistrar">¡Registrare!</string>
+    <string name="logLblCopyright">UPN 2023</string>
+    <string name="bieLblNombre">Bienvenid@</string>
+    <string name="frgCfgBtnCerrarSesion">Cerrar Sesion</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings used for fragments for navigation -->
+
+</resources>
