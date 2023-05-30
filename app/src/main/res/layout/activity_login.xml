@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
+
     tools:context=".actividades.LoginActivity">
 
     <LinearLayout
@@ -15,64 +16,66 @@
 
         <ImageView
             android:id="@+id/ivLogo"
-            android:layout_width="335dp"
+            android:layout_width="349dp"
             android:layout_height="130dp"
             android:layout_margin="30dp"
             android:src="@drawable/logo" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="33dp"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/usuario" />
-
-            <EditText
-                android:id="@+id/logTxtCorreo"
-                android:layout_width="300dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:hint="@string/logTxtCorreo"
-                android:inputType="textEmailAddress"
-                android:maxLength="50" />
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
-        </LinearLayout>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/usuario" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/logTxtCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:hint="@string/logTxtCorreo"
+                        android:inputType="textEmailAddress"/>
+                   </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="33dp"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:src="@drawable/clave" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="300dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:passwordToggleEnabled="true">
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/logTxtClave"
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/clave" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
-                    android:hint="@string/logTxtClave"
-                    android:inputType="textPassword"
-                    android:maxLength="64" />
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/logTxtClave"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:hint="@string/logTxtClave"
+                        android:inputType="textPassword"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
 
         <CheckBox
             android:id="@+id/logChkRecordar"
@@ -87,10 +90,11 @@
             android:id="@+id/logBtnIngresar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAllCaps="false"
             android:gravity="center"
+            android:text="@string/logBtnIngresar"
+            android:textAllCaps="false"
             android:textStyle="bold"
-            android:text="@string/logBtnIngresar" />
+            app:rippleColor="@color/black" />
         <Button
             android:id="@+id/logBtnSalir"
             android:layout_width="match_parent"
@@ -115,7 +119,7 @@
             android:gravity="center_horizontal"
             android:text="@string/logLblRecuperarContraseña" />
 
-        <LinearLayout
+            <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -143,15 +147,15 @@
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/twitter" />
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="center_horizontal"
-            android:text="@string/logLblCopyright" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/logLblCopyright" />
 
     </LinearLayout>
 
