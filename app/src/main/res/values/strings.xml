@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Proyecto</string>
     <string name="logTxtCorreo">Correo Electronico</string>
-    <string name="logBtnIngresar">Ingregar</string>
-    <string name="logTxtClave">Clave</string>
+    <string name="logBtnIngresar">Ingresar</string>
+    <string name="logTxtClave">Contraseña</string>
     <string name="logBtnSalir">Salir</string>
     <string name="logChkRecordar">Recordar Sesion</string>
-    <string name="logLblRegistrar">¡Registrare!</string>
+    <string name="logLblRegistrar">Registrarse</string>
     <string name="logLblCopyright">UPN 2023</string>
     <string name="bieLblNombre">Bienvenid@</string>
     <string name="frgCfgBtnCerrarSesion">Cerrar Sesion</string>
