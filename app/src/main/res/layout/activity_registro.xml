@@ -4,106 +4,132 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#202732"
     tools:context=".actividades.RegistroActivity">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="20dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#F5F5F5"
+            android:background="@drawable/text_rounded_border"
             android:text="Registrar nuevo usuario"
-            android:textSize="24sp"
+            android:textSize="30dp"
             android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="5dp" />
 
-        <EditText
-            android:id="@+id/logTxtNvoUsuario"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/logTxtNvoUsuario"
-            android:textColor="#000000"
-            android:textSize="16sp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="22dp">
 
-        <EditText
-            android:id="@+id/logTxtNvoApellido"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/logTxtNvoApellido"
-            android:textColor="#000000"
-            android:textSize="16sp" />
+            <EditText
+                android:id="@+id/logTxtNvoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/logTxtNvoUsuario"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F5F5F5"
+                android:textColorHint="#80FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+s
+            <EditText
+                android:id="@+id/logTxtNvoCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/logTxtNvoCorreo"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F5F5F5"
+                android:textColorHint="#80FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:inputType="textEmailAddress" />
 
-        <EditText
-            android:id="@+id/logTxtNvoCorreo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/logTxtNvoCorreo"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:inputType="textEmailAddress" />
+            <EditText
+                android:id="@+id/logTxtNvoClave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/logTxtNvoClave"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F5F5F5"
+                android:textColorHint="#80FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:inputType="textPassword" />
 
-        <EditText
-            android:id="@+id/logTxtNvoClave"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/logTxtNvoClave"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:inputType="textPassword" />
-
-        <EditText
-            android:id="@+id/logTxCnfCntContraseña"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/logTxCnfCntContraseña"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:inputType="textPassword" />
-
-
-        <EditText
-            android:id="@+id/etClogTxtNvoCelular"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/etClogTxtNvoCelular"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:inputType="textPassword" />
-
-        <EditText
-            android:id="@+id/logTxtNvoPais"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/logTxtNvoPais"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:inputType="textPassword" />
-
-        <EditText
-            android:id="@+id/logTxtNvoDistrito"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/logTxtNvoDistrito"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:inputType="textPassword" />
+            <EditText
+                android:id="@+id/logTxCnfCntContraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/logTxCnfCntContraseña"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F5F5F5"
+                android:textColorHint="#80FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:inputType="textPassword" />
 
 
-        <Button
-            android:id="@+id/logBtnRegistrarNvo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Registrar"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            <EditText
+                android:id="@+id/etClogTxtNvoCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/etClogTxtNvoCelular"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F5F5F5"
+                android:textColorHint="#80FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
 
+            <EditText
+                android:id="@+id/logTxtNvoPais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/logTxtNvoPais"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F5F5F5"
+                android:textColorHint="#80FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/logTxtNvoCiudad"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/logTxtNvoCiudad"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#F5F5F5"
+                android:textColorHint="#80FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/logBtnRegistrarNvo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_rounded"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            </LinearLayout>
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
