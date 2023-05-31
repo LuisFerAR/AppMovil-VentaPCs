@@ -5,19 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
-
+    android:background="#212121"
     tools:context=".actividades.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
+
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/ivLogo"
             android:layout_width="349dp"
-            android:layout_height="130dp"
+            android:layout_height="110dp"
             android:layout_margin="30dp"
             android:src="@drawable/logo" />
 
@@ -77,39 +78,51 @@
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 
-        <CheckBox
-            android:id="@+id/logChkRecordar"
+            <CheckBox
+                android:id="@+id/logChkRecordar"
+                android:textColor="#E8F5E9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/logChkRecordar" />
+            <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/logChkRecordar" />
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/logBtnIngresar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/logBtnIngresar"
-            android:textAllCaps="false"
-            android:textStyle="bold"
-            app:rippleColor="@color/black" />
-        <Button
-            android:id="@+id/logBtnSalir"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/logBtnSalir"
-            android:textAllCaps="false"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/logBtnIngresar"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:text="@string/logBtnIngresar"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:backgroundTint="#005500"/>
+                <!-- android:backgroundTint="#005500" /> -->
+            <Button
+                android:id="@+id/logBtnSalir"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:text="@string/logBtnSalir"
+                android:backgroundTint="#005500"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/logLblRegistro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/logLblRegistrar"
-            android:textAllCaps="false"
-            android:textStyle="bold" />
+            <Button
+                android:id="@+id/logLblRegistro"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:text="@string/logLblRegistrar"
+                android:backgroundTint="#005500"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+
+            </LinearLayout>
+
 
         <TextView
             android:layout_width="match_parent"
@@ -117,6 +130,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:gravity="center_horizontal"
+            android:textColor="#E8F5E9"
             android:text="@string/logLblRecuperarContraseña" />
 
             <LinearLayout
@@ -131,6 +145,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:scaleType="fitCenter"
+
                 app:srcCompat="@drawable/facebook" />
 
             <ImageButton
@@ -138,6 +153,7 @@
                 android:layout_width="80dp"
                 android:layout_height="60dp"
                 android:scaleType="fitCenter"
+                android:backgroundTint="#e8f5e9"
                 app:srcCompat="@drawable/logogoogle" />
 
             <ImageButton
