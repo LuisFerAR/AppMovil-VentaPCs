@@ -14,14 +14,33 @@
         android:layout_margin="10dp"
         android:orientation="vertical">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="30dp"
-            android:textSize="55dp"
-            android:gravity="center_horizontal"
-            android:textColor="#E8F5E9"
-            android:text="TrustTech" />
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="279dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="TrustTech"
+                android:textColor="#E8F5E9"
+                android:textSize="45dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_empresa" />
+
+
+        </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
