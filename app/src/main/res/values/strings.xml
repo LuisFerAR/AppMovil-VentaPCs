@@ -18,6 +18,8 @@
     <string name="logTxtNvoPais"> Pais </string>
     <string name="logTxtNvoCiudad">Ciudad </string>
     <string name="logBtnRegistrarNvo">Registrar </string>
+    <string name="logTxtNvoFecha">Fecha de nacimiento </string>
+
 
 
     <!-- TODO: Remove or change this placeholder text -->
