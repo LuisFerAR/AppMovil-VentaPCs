@@ -11,12 +11,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
+
         <fragment
             android:id="@+id/frgMenu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:name="com.example.proyecto.fragmentos.MenuFragment"
-            tools:layout="@layout/fragment_menu"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_menu" />
+
         <RelativeLayout
             android:id="@+id/menRelMenu"
             android:layout_width="match_parent"
