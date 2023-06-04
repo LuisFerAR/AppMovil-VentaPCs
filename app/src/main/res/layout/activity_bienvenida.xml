@@ -91,7 +91,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/cart_background"
+            android:background="@drawable/background_carro"
             android:elevation="3dp"
             android:orientation="vertical">
 
