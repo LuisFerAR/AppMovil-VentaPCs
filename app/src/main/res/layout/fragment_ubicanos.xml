@@ -3,12 +3,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragmentos.UbicanosFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text= "ubicanos"/>
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/frgCfgUbcMetodo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#070606"
+                android:background="@drawable/text_rounded_border"
+                android:text="@string/frgUbcLblMetodos" />
+
+            <Button
+                android:id="@+id/frgUbcBtnContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgUbcBtnContacto" />
+
+            <Button
+                android:id="@+id/frgUbcBtnAvanzado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgUbcBtnAvanzado" />
+
+            <Button
+                android:id="@+id/frgUbcBtnParametros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgUbcBtnParametros" />
+
+            <Button
+                android:id="@+id/frgUbiBtnNavegador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgUbcBtnNavegador"/>
+
+            <Button
+                android:id="@+id/frgUbcBtnSeguimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgUbcBtnSeguimiento" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </FrameLayout>

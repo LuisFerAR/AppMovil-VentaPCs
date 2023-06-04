@@ -17,7 +17,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#F5F5F5"
-            android:background="@drawable/text_rounded_border"
             android:text="Registrar nuevo usuario"
             android:textSize="30dp"
             android:textStyle="bold"

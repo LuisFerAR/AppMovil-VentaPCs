@@ -17,12 +17,83 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#070606"
+                android:background="@drawable/text_rounded_border"
+                android:text="@string/frgCfgLblInformaciondelaCuenta"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/frgCfgBtnAdministracionCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgCfgBtnAdministracionCuenta"/>
+
+            <Button
+                android:id="@+id/frgCfgBtnNotificaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgCfgBtnNotificaciones" />
+
+            <Button
+
+                android:id="@+id/frgCfgBtnPrivacidadDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgCfgBtnPrivacidadDatos" />
+
+            <Button
+                android:id="@+id/frgCfgBtnSeguridadSesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgCfgBtnSeguridadSesion" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_rounded_border"
+                android:textColor="#070606"
+                android:text="@string/frgCfgLblAcciones"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/frgCtgBtnAgregarCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgCfgBtnAgregarCuenta" />
+
             <Button
                 android:id="@+id/frgCfgBtnCerrarSesion"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="@string/frgCfgBtnCerrarSesion"/>
+                android:text="@string/frgCfgBtnCerrarSesion"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_rounded_border"
+                android:textColor="#070606"
+                android:text="@string/frgCfgLblSoporte"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/frgCfgBtnObtenerAyuda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgCfgBtnObtenerAyuda" />
+
+            <Button
+                android:id="@+id/frgCfgBtnCondiciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgCfgBtnCondiciones" />
+
+            <Button
+                android:id="@+id/frgCfgBtnPolitica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/frgCfgBtnPolitica" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </FrameLayout>

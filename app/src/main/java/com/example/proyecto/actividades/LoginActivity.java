@@ -61,10 +61,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void iniciarSesion(String correo, String clave, boolean recordo) {
         Hash hash =  new Hash();
         clave = recordo == true ? clave : hash.StringToHash(clave, "SHA1");
-        if(correo.equals("upn@upn.edu.pe")&& clave.equals("e05adfb80b6cc009a848215b506ae63f6fd05b97")){
+        if(correo.equals("luis@upn.edu.pe")&& clave.equals("e05adfb80b6cc009a848215b506ae63f6fd05b97")){
             Intent iBienvenida = new Intent(this, BienvenidaActivity.class);
-            iBienvenida.putExtra("nombre", "Cuto");
-            if(chkRecordar.isChecked()){
+            iBienvenida.putExtra("nombre", "Luis");
+            if(chkRecordar.isChecked()){git 
                 yugioh yugioh = new yugioh(getApplicationContext());
                 yugioh.agregarUsuario(1, correo, clave);
             }
