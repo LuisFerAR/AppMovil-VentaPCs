@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if(correo.equals("luis@upn.edu.pe")&& clave.equals("e05adfb80b6cc009a848215b506ae63f6fd05b97")){
             Intent iBienvenida = new Intent(this, BienvenidaActivity.class);
             iBienvenida.putExtra("nombre", "Luis");
-            if(chkRecordar.isChecked()){git 
+            if(chkRecordar.isChecked()){git
                 yugioh yugioh = new yugioh(getApplicationContext());
                 yugioh.agregarUsuario(1, correo, clave);
             }
@@ -80,7 +80,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         startActivity(iRegistro);
     }
 
-    private void salir() {
+    private void salir() {git s
         //limpiar temporales o cerrar archivos abiertos
         //validar si hay algo pendiente
         System.exit(0);
