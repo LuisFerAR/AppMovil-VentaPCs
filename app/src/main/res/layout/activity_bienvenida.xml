@@ -179,7 +179,7 @@
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:background="@drawable/blue_banner">
+        tools:background="@drawable/banner_back">
 
         <ImageView
             android:id="@+id/imageView5"
