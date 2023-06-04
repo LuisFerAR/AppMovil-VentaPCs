@@ -3,13 +3,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragmentos.CartasFragment">
 
     <!-- TODO: Update blank fragment layout -->
    <LinearLayout
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"
+       android:layout_height="match_parent"
+       android:padding="30dp"
+       android:background="@drawable/radius_perfil"
        android:orientation="vertical">
+
+       <ImageView
+           android:id="@+id/imageView"
+           android:layout_width="match_parent"
+           android:layout_height="144dp"
+           app:srcCompat="@drawable/foto"
+           android:layout_marginBottom="20dp"
+           tools:layout_editor_absoluteX="266dp"
+           tools:layout_editor_absoluteY="16dp" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center|center_horizontal"
+           android:textSize="20dp"
+           android:layout_marginBottom="25dp"
+           android:text="Luis Enrique Ramos Palacios"
+           android:textColor="#FF018786"
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:layout_marginBottom="10dp"
+           android:text="Correo electronico"
+           android:textColor="#FF000000"
+           android:textStyle="bold" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:gravity="center_horizontal"
+           android:layout_marginBottom="30dp"
+           android:text="Luis@gmail.com"
+           android:textColor="#FF018786"
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:layout_marginBottom="10dp"
+           android:text="Celular"
+           android:textColor="#FF000000"
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:layout_marginBottom="30dp"
+           android:text="960824487"
+           android:gravity="center_horizontal"
+           android:textColor="#FF018786"
+           android:textStyle="bold" />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:layout_marginBottom="10dp"
+           android:text="Pais"
+           android:textColor="#FF000000"
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:layout_marginBottom="30dp"
+           android:text="Peru"
+           android:gravity="center_horizontal"
+           android:textColor="#FF018786"
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:layout_marginBottom="10dp"
+           android:text="Metodo de pago"
+           android:textColor="#FF000000"
+           android:textStyle="bold" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:text="Visa       4557-XXXX-XXXX-2458"
+           android:gravity="center_horizontal"
+           android:textColor="#FF018786"
+           android:textStyle="bold" />
 
 
 
