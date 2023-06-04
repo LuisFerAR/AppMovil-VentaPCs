@@ -6,10 +6,13 @@
     tools:context=".fragmentos.CartasFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="100dp"
-        android:text="cartas" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+
+
+   </LinearLayout>
 
 </FrameLayout>
