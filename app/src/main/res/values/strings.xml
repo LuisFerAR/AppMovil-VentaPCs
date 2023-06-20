@@ -10,16 +10,25 @@
     <string name="bieLblNombre">Bienvenido </string>
     <string name="frgCfgBtnCerrarSesion">Cerrar Sesion</string>
     <string name="logLblRecuperarContraseña">Has olvidado tu contraseña?</string>
-    <string name="logTxtNvoUsuario">Nombres y Apellidos completos</string>
-    <string name="logTxtNvoCorreo"> Correo electronico </string>
-    <string name="logTxtNvoClave"> Contraseña</string>
-    <string name="logTxCnfCntContraseña">Confirmar Contraseña  </string>
-    <string name="etClogTxtNvoCelular">Celular  </string>
-    <string name="logTxtNvoPais"> Pais </string>
-    <string name="logTxtNvoCiudad">Ciudad </string>
-    <string name="logBtnRegistrarNvo">Registrar </string>
-    <string name="logTxtNvoFecha">Fecha de nacimiento </string>
+
+    <!-- Bienvenida -->
+
     <string name="logTxtBuscar">Buscar</string>
+
+    <!-- Registro -->
+    <string name="regLblTitulo">Registro</string>
+    <string name="regTxtDNI">DNI</string>
+    <string name="RegTxtNombre">Nombres</string>
+    <string name="regTxtApellidos">Apellidos</string>
+    <string name="txtRegFechaNac">Fecha Nacimiento</string>
+    <string name="regRabSinDefinir">Sin Definir</string>
+    <string name="regRabMasculino">Masculino</string>
+    <string name="regRabFemenino">Femenino</string>
+    <string name="regTxtCorreo">Correo</string>
+    <string name="regTxtClave">Clave</string>
+    <string name="regChkTerminos">Términos y condiciones</string>
+    <string name="regBtnRegistrar">Registrar</string>
+    <string name="regBtnCancelar">Cancelar</string>
 
 
     <!-- Para el subtitulo de Informacion de cuenta -->

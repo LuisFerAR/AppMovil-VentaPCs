@@ -1,148 +1,266 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#202732"
     tools:context=".actividades.RegistroActivity">
-
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#F5F5F5"
-            android:text="Registrar nuevo usuario"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="5dp" />
-
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="22dp">
-
-            <EditText
-                android:id="@+id/logTxtNvoUsuario"
-                android:layout_width="match_parent"
-                android:layout_height="43dp"
-                android:layout_marginBottom="15dp"
-                android:hint="@string/logTxtNvoUsuario"
-                android:textColor="#FFFFFF"
-                android:backgroundTint="#F5F5F5"
-                android:textColorHint="#80FFFFFF"
-                android:textStyle="bold"
-                android:textSize="16sp" />
-s
-            <EditText
-                android:id="@+id/logTxtNvoCorreo"
+            android:layout_margin="20dp">
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:hint="@string/logTxtNvoCorreo"
-                android:textColor="#FFFFFF"
-                android:backgroundTint="#F5F5F5"
-                android:textColorHint="#80FFFFFF"
+                android:text="@string/regLblTitulo"
                 android:textStyle="bold"
-                android:textSize="16sp"
-                android:inputType="textEmailAddress" />
-
-            <EditText
-                android:id="@+id/logTxtNvoClave"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:textSize="26dp"/>
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:hint="@string/logTxtNvoClave"
-                android:textColor="#FFFFFF"
-                android:backgroundTint="#F5F5F5"
-                android:textColorHint="#80FFFFFF"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:inputType="textPassword" />
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/logTxCnfCntContraseña"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/logTxCnfCntContraseña"
-                android:layout_marginBottom="15dp"
-                android:textColor="#FFFFFF"
-                android:backgroundTint="#F5F5F5"
-                android:textColorHint="#80FFFFFF"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:inputType="textPassword" />
-
-
-            <EditText
-                android:id="@+id/etClogTxtNvoCelular"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:hint="@string/etClogTxtNvoCelular"
-                android:inputType="phone"
-                android:textColor="#FFFFFF"
-                android:backgroundTint="#F5F5F5"
-                android:textColorHint="#80FFFFFF"
-                android:textStyle="bold"
-                android:textSize="16sp"/>
-
-            <EditText
-                android:id="@+id/logTxtNvoPais"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:hint="@string/logTxtNvoPais"
-                android:textColor="#FFFFFF"
-                android:backgroundTint="#F5F5F5"
-                android:textColorHint="#80FFFFFF"
-                android:textStyle="bold"
-                android:textSize="16sp"/>
-
-            <EditText
-                android:id="@+id/logTxtNvoCiudad"
-                android:layout_width="match_parent"
-                android:layout_marginBottom="15dp"
-                android:layout_height="wrap_content"
-                android:hint="@string/logTxtNvoCiudad"
-                android:textColor="#FFFFFF"
-                android:backgroundTint="#F5F5F5"
-                android:textColorHint="#80FFFFFF"
-                android:textStyle="bold"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/logTxtNvoFecha"
-                android:layout_width="match_parent"
-                android:layout_marginBottom="15dp"
-                android:layout_height="wrap_content"
-                android:hint="@string/logTxtNvoFecha"
-                android:textColor="#FFFFFF"
-                android:backgroundTint="#F5F5F5"
-                android:textColorHint="#80FFFFFF"
-                android:inputType="date"
-                android:textStyle="bold"
-                android:textSize="16sp" />
-
-            <Button
-                android:id="@+id/logBtnRegistrarNvo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Registrar"
-                android:textColor="#FFFFFF"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/button_rounded"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
+                <ImageView
+                    android:layout_width="51dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/dni" />
+                <EditText
+                    android:id="@+id/regTxtDNI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="8"
+                    android:inputType="number"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/regTxtDNI"/>
             </LinearLayout>
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:layout_width="54dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/usuario_r" />
+
+                <EditText
+                    android:id="@+id/regTxtNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"
+                    android:inputType="text"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/RegTxtNombre"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="59dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/apellidos" />
+                <EditText
+                    android:id="@+id/regTxtApellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"
+                    android:inputType="text"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/regTxtApellidos"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/fecha" />
+                <EditText
+                    android:id="@+id/regTxtFechaNac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:maxLength="50"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/txtRegFechaNac"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sexo" />
+                <RadioGroup
+                    android:id="@+id/regragSexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/regRabSinDefinir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/regRabSinDefinir" />
+                    <RadioButton
+                        android:id="@+id/regRabMasculino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/regRabMasculino" />
+                    <RadioButton
+                        android:id="@+id/regRabFemenino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="@string/regRabFemenino" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/email" />
+                <EditText
+                    android:id="@+id/regTxtCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="@string/regTxtCorreo"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="74dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/distrito" />
+                <Spinner
+                    android:id="@+id/regCboDistritos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/clave_r" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
+                    <EditText
+                        android:id="@+id/regTxtClave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="20"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="@string/regTxtClave"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <CheckBox
+                android:id="@+id/regChkTerminos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/regChkTerminos" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="40dp">
+                <Button
+                    android:id="@+id/regBtnRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/regBtnRegistrar"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/regBtnCancelar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/regBtnCancelar"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.core.widget.NestedScrollView>
