@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.proyecto.R;
+import com.example.proyecto.clases.Cliente;
 import com.example.proyecto.clases.Menu;
 
 public class BienvenidaActivity extends AppCompatActivity implements Menu {
@@ -18,8 +19,8 @@ public class BienvenidaActivity extends AppCompatActivity implements Menu {
         setContentView(R.layout.activity_bienvenida);
 
         lblNombre = findViewById(R.id.bieLblNombre);
-        String nombre = getIntent().getStringExtra("nombre");
-        lblNombre.setText("Bienvenido"+nombre);
+        Cliente cliente = (Cliente)getIntent().getSerializableExtra("cliente");
+        lblNombre.setText("Bienvenido "+cliente.getNombre());
     }
 
     @Override

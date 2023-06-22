@@ -3,6 +3,7 @@ package com.example.proyecto.actividades;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -10,11 +11,13 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.proyecto.R;
+import com.example.proyecto.clases.Hash;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.BaseJsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -35,6 +38,7 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
     RadioGroup ragSexo;
 
     private final String getController = "http://proyecto-yugioh.atwebpages.com/webServices/mostrarController.php";
+    private final String setCliente = "http://proyecto-yugioh.atwebpages.com/webServices/agregarCliente.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,8 +63,11 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
 
 
         txtFechaNac.setOnClickListener(this);
+        chkTerminos.setOnClickListener(this);
         btnRegistrar.setOnClickListener(this);
         btnCancelar.setOnClickListener(this);
+
+        btnRegistrar.setEnabled(false);
     }
 
     private void llenarDistritos() {
@@ -106,6 +113,9 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
             case R.id.regTxtFechaNac:
                 cargarSelectorFechas();
                 break;
+            case R.id.regChkTerminos:
+                setEstadoBotonRegistrar(chkTerminos.isChecked());
+                break;
             case R.id.regBtnRegistrar:
                 registrarCliente();
                 break;
@@ -113,6 +123,10 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
                 regresar();
                 break;
         }
+    }
+
+    private void setEstadoBotonRegistrar(boolean checked) {
+        btnRegistrar.setEnabled(checked);
     }
 
     private void cargarSelectorFechas() {
@@ -131,7 +145,76 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void registrarCliente() {
-        
+        if (validarFormulario()) {
+            String dni = txtDni.getText().toString();
+            String nombre = txtNombre.getText().toString();
+            String apellidos = txtApellido.getText().toString();
+            String fechaNac = txtFechaNac.getText().toString();
+            char sexo = 'X';
+            int radioButtonID = ragSexo.getCheckedRadioButtonId();
+            RadioButton radioButton = ragSexo.findViewById(radioButtonID);
+            String texto = radioButton.getText().toString();
+            switch (texto){
+                case "Masculino": sexo = 'M';break;
+                case "Femenino": sexo = 'F';break;
+                default:sexo = 'X';break;
+            }
+            String correo = txtCorreo.getText().toString();
+            Hash hash = new Hash();
+            String clave = hash.StringToHash(txtClave.getText().toString(), "SHA1");
+            int idDistrito = cboDistritos.getSelectedItemPosition();
+            AsyncHttpClient ahcRegistrarcliente = new AsyncHttpClient();
+            RequestParams params = new RequestParams();
+            params.add("dni", dni);
+            params.add("nombre", nombre);
+            params.add("apellidos", apellidos);
+            params.add("fecha_nac", fechaNac);
+            params.add("sexo", String.valueOf(sexo));
+            params.add("correo", correo);
+            params.add("clave", clave);
+            params.add("id_distrito", String.valueOf(idDistrito));
+
+            ahcRegistrarcliente.post(setCliente, params, new BaseJsonHttpResponseHandler() {
+                @Override
+                public void onSuccess(int statusCode, Header[] headers, String rawJsonResponse, Object response) {
+                    if(statusCode == 200){
+                        int resultado = rawJsonResponse.length() == 0 ? 0 : Integer.parseInt(rawJsonResponse);
+                        if(resultado == 1){
+                            setEstadoBotonRegistrar(false);
+                            btnCancelar.setEnabled(false);
+                            Toast.makeText(getApplicationContext(), "Usuario Registrado", Toast.LENGTH_LONG).show();
+                            Intent login = new Intent(getApplicationContext(), LoginActivity.class);
+                            try {
+                                Thread.sleep(2000);
+                            } catch (InterruptedException e){
+                                throw new RuntimeException(e);
+                            }
+                            startActivity(login);
+                            finish();
+
+                        }
+                        else{
+                            Toast.makeText(getApplicationContext(), "Error al  Registrar", Toast.LENGTH_LONG).show();
+                        }
+
+                    }
+                }
+
+                @Override
+                public void onFailure(int statusCode, Header[] headers, Throwable throwable, String rawJsonData, Object errorResponse) {
+                }
+
+                @Override
+                protected Object parseResponse(String rawJsonData, boolean isFailure) throws Throwable {
+                    return null;
+                }
+            });
+        }
+    }
+
+    private boolean validarFormulario() {
+        //Se realiza la validacion del formulario(pendiente por tiempo para ustedes)
+        return true;
     }
 
     private void regresar() {
