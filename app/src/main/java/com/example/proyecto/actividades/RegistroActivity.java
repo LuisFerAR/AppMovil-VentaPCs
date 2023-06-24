@@ -38,9 +38,9 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
     RadioGroup ragSexo;
 
     //private final String getController = "https://appmovilxdd.000webhostapp.com/webService/mostrarController.php";
-    private final String setCliente = "https://appmovilxdd.000webhostapp.com/webService/agregarCliente.php";
+    //private final String setCliente = "https://appmovilxdd.000webhostapp.com/webService/agregarCliente.php";
     private final String getController = "http://proyecto-yugioh.atwebpages.com/webServices/mostrarController.php";
-    //private final String setCliente = "http://proyecto-yugioh.atwebpages.com/webServices/agregarCliente.php";
+    private final String setCliente = "http://proyecto-yugioh.atwebpages.com/webServices/agregarCliente.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
