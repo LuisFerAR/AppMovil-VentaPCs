@@ -37,8 +37,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     TextView lblRegistrar;
 
 
-    //final private String urlLogin = "https://appmovilxdd.000webhostapp.com/webService/iniciarSesion.php";
-    final private String urlLogin = "http://proyecto-yugioh.atwebpages.com/webServices/iniciarSesion.php";
+    final private String urlLogin = "http://appmovilxddd.000webhostapp.com/webServices/iniciarSesion.php";
+   //final private String urlLogin = "http://proyecto-yugioh.atwebpages.com/webServices/iniciarSesion.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
