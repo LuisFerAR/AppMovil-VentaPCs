@@ -50,6 +50,7 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
         txtApellido = findViewById(R.id.regTxtApellidos);
         txtFechaNac = findViewById(R.id.regTxtFechaNac);
         txtCorreo = findViewById(R.id.regTxtCorreo);
+        txtClave = findViewById(R.id.regTxtClave);
         chkTerminos = findViewById(R.id.regChkTerminos);
         btnRegistrar = findViewById(R.id.regBtnRegistrar);
         btnCancelar = findViewById(R.id.regBtnCancelar);
@@ -61,7 +62,6 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
 
         llenarDistritos();
 
-
         txtFechaNac.setOnClickListener(this);
         chkTerminos.setOnClickListener(this);
         btnRegistrar.setOnClickListener(this);
@@ -71,7 +71,7 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void llenarDistritos() {
-        com.loopj.android.http.AsyncHttpClient aDistritos = new AsyncHttpClient();
+        AsyncHttpClient aDistritos = new AsyncHttpClient();
         RequestParams params = new RequestParams();
         params.add("tipo","1");
 
@@ -218,7 +218,6 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void regresar() {
-        
-        
+
     }
 }
