@@ -36,6 +36,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     CheckBox chkRecordar;
     TextView lblRegistrar;
 
+
+    //final private String urlLogin = "https://appmovilxdd.000webhostapp.com/webService/iniciarSesion.php";
     final private String urlLogin = "http://proyecto-yugioh.atwebpages.com/webServices/iniciarSesion.php";
 
     @Override
