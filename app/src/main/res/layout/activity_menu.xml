@@ -16,7 +16,7 @@
             android:id="@+id/frgMenu"
             android:name="com.example.proyecto.fragmentos.MenuFragment"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="77dp"
             tools:layout="@layout/fragment_menu" />
 
         <RelativeLayout

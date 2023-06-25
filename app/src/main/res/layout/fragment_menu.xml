@@ -11,7 +11,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_margin="0dp">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,21 +24,10 @@
                 android:layout_marginBottom="0dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="0dp"
-                    android:gravity="center"
-                    android:textColor="#FFFFFFFF"
-                    android:text="Mi perfil"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
                 <ImageButton
                     android:id="@+id/ibCartas"
                     android:layout_width="85dp"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:background="#0000"
@@ -55,21 +43,10 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:textColor="#FFFFFFFF"
-                    android:gravity="center"
-                    android:text="Comprar"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-
                 <ImageButton
                     android:id="@+id/ibCarrito"
                     android:layout_width="85dp"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
@@ -87,21 +64,10 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:textColor="#FFFFFFFF"
-                    android:gravity="center"
-                    android:text="Ubicanos"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
                 <ImageButton
                     android:id="@+id/ibUbicanos"
                     android:layout_width="85dp"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:layout_marginTop="10dp"
                     android:layout_gravity="center"
                     android:background="#0000"
@@ -117,21 +83,10 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:gravity="center"
-                    android:textColor="#FFFFFFFF"
-                    android:text="Configuracion"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
-
                 <ImageButton
                     android:id="@+id/ibConfiguracion"
                     android:layout_width="85dp"
-                    android:layout_height="45dp"
+                    android:layout_height="50dp"
                     android:layout_marginTop="10dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"

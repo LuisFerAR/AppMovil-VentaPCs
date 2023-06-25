@@ -7,22 +7,23 @@
     android:layout_height="wrap_content"
     tools:context=".actividades.BienvenidaActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/radius_perfil"
         android:orientation="vertical"
-        android:padding="10dp"
-        tools:ignore="MissingConstraints">
+        android:padding="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -64,7 +65,6 @@
 
 
         <EditText
-
             android:layout_width="379dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -183,8 +183,6 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
             android:layout_marginEnd="32dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             tools:background="@drawable/banner_back">
 
             <ImageView
@@ -192,7 +190,6 @@
                 android:layout_width="184dp"
                 android:layout_height="93dp"
                 android:layout_marginStart="4dp"
-                android:contentDescription="TODO"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -247,17 +244,16 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
-
+    </LinearLayout>
         <fragment
             android:id="@+id/frgMenu"
             android:name="com.example.proyecto.fragmentos.MenuFragment"
-            android:layout_width="401dp"
-            android:layout_height="125dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             tools:layout="@layout/fragment_menu" />
     </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
