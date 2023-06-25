@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:visibility="visible"
-    android:background="#202732"
+    android:background="#Ececec"
     tools:context=".actividades.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp"
+        android:background="@drawable/button_rounded"
         android:orientation="vertical">
 
         <LinearLayout
@@ -21,20 +21,20 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="279dp"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="30dp"
-                android:gravity="center"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
                 android:text="TrustTech"
-                android:textColor="#E8F5E9"
                 android:textSize="45dp" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="79dp"
                 android:layout_gravity="center"
-                android:layout_margin="5dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/logo_empresa" />
 
@@ -50,22 +50,23 @@
 
                 <ImageView
                     android:layout_width="59dp"
-                    android:layout_height="41dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/usuario" />
+                    android:src="@drawable/usuario_r"  />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="300dp"
                     android:layout_height="wrap_content">
+
                     <EditText
                         android:id="@+id/logTxtCorreo"
-                        android:layout_width="match_parent"
+                        android:layout_width="277dp"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="15dp"
                         android:hint="@string/logTxtCorreo"
-                        android:inputType="textEmailAddress"/>
+                        android:inputType="textEmailAddress" />
                    </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 
@@ -76,12 +77,12 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="59dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/clave" />
+                    android:src="@drawable/clave_r" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="300dp"
@@ -90,20 +91,20 @@
 
                     <EditText
                         android:id="@+id/logTxtClave"
-                        android:layout_width="300dp"
+                        android:layout_width="276dp"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="15dp"
                         android:hint="@string/logTxtClave"
-                        android:inputType="textPassword"/>
+                        android:inputType="textPassword" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
-
+S
             <CheckBox
                 android:id="@+id/logChkRecordar"
-                android:textColor="#E8F5E9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
+                android:textStyle="italic"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="10dp"
                 android:text="@string/logChkRecordar" />
@@ -114,34 +115,34 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/logBtnIngresar"
-                android:layout_width="330dp"
-                android:layout_height="55dp"
-                android:textSize="18sp"
-                android:layout_marginBottom="20dp"
-                android:text="@string/logBtnIngresar"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                android:background="@drawable/button_rounded"/>
+                <Button
+                    android:id="@+id/logBtnIngresar"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/button_rounded"
+                    android:text="@string/logBtnIngresar"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
             <Button
                 android:id="@+id/logBtnSalir"
-                android:layout_width="330dp"
-                android:layout_height="55dp"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:text="@string/logBtnSalir"
                 android:background="@drawable/button_rounded"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="15dp"
                 android:textAllCaps="false"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/logLblRegistro"
                 android:textSize="18sp"
-                android:layout_width="330dp"
-                android:layout_height="55dp"
-                android:layout_marginBottom="20dp"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/button_rounded"
                 android:text="@string/logLblRegistrar"
                 android:backgroundTint="#005500"
@@ -153,11 +154,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
             android:textSize="16dp"
+            android:textColor="#2196F3"
+            android:textStyle="italic"
             android:gravity="center_horizontal"
-            android:textColor="#E8F5E9"
             android:text="@string/logLblRecuperarContraseña" />
 
             <LinearLayout
@@ -171,7 +173,7 @@
                 android:id="@+id/imageButton2"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginRight="20dp"
                 android:scaleType="fitCenter"
                 app:srcCompat="@drawable/facebook"
                 android:background="@drawable/button_social"/>
@@ -181,7 +183,7 @@
                 android:layout_width="60dp"
                 android:layout_height="50dp"
                 android:scaleType="fitCenter"
-                android:layout_marginRight="15dp"
+                android:layout_marginRight="20dp"
                 app:srcCompat="@drawable/logogoogle"
                 android:background="@drawable/button_social"/>
 
@@ -197,16 +199,18 @@
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="15dp"
-                android:textColor="#E8F5E9"
-                android:gravity="center_horizontal"
-                android:text="@string/logLblCopyright" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/logLblCopyright"
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
+
 
 
 </android.widget.ScrollView>
