@@ -11,6 +11,7 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EEEEEE"
     android:padding="10dp"
     android:orientation="vertical">
 
@@ -143,7 +144,6 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -155,7 +155,6 @@
                     tools:layout_editor_absoluteY="110dp" />
 
                 <TextView
-                    android:id="@+id/fee_3"
                     android:layout_width="74dp"
                     android:layout_height="26dp"
                     android:layout_marginLeft="20dp"
@@ -168,7 +167,6 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/addBtn_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -185,7 +183,7 @@
                 tools:paddingBottom="5dp" />
 
             <ImageView
-                android:id="@+id/pic_img103"
+                android:id="@+id/pic_img110"
                 android:layout_width="162dp"
                 android:layout_height="221dp"
                 android:layout_marginStart="200dp"
@@ -233,7 +231,6 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -245,7 +242,6 @@
                     tools:layout_editor_absoluteY="110dp" />
 
                 <TextView
-                    android:id="@+id/fee_4"
                     android:layout_width="74dp"
                     android:layout_height="26dp"
                     android:layout_marginLeft="20dp"
@@ -258,7 +254,6 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/addBtn_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -275,7 +270,7 @@
                 tools:paddingBottom="5dp" />
 
             <ImageView
-                android:id="@+id/pic_img104"
+                android:id="@+id/pic_img103"
                 android:layout_width="162dp"
                 android:layout_height="221dp"
                 android:layout_marginStart="200dp"
@@ -323,7 +318,6 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -335,7 +329,6 @@
                     tools:layout_editor_absoluteY="110dp" />
 
                 <TextView
-                    android:id="@+id/fee_9"
                     android:layout_width="74dp"
                     android:layout_height="26dp"
                     android:layout_marginLeft="20dp"
@@ -348,7 +341,6 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/addBtn_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -365,7 +357,7 @@
                 tools:paddingBottom="5dp" />
 
             <ImageView
-                android:id="@+id/pic_img105"
+
                 android:layout_width="162dp"
                 android:layout_height="221dp"
                 android:layout_marginStart="200dp"
@@ -379,7 +371,6 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/fee_5"
             android:layout_width="389dp"
             android:layout_height="231dp"
             android:layout_marginStart="15dp"
@@ -425,7 +416,6 @@
                     tools:layout_editor_absoluteY="110dp" />
 
                 <TextView
-                    android:id="@+id/fee_6"
                     android:layout_width="74dp"
                     android:layout_height="26dp"
                     android:layout_marginLeft="20dp"
@@ -438,7 +428,6 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/addBtn_6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -455,7 +444,7 @@
                 tools:paddingBottom="5dp" />
 
             <ImageView
-                android:id="@+id/pic_img106"
+
                 android:layout_width="162dp"
                 android:layout_height="221dp"
                 android:layout_marginStart="200dp"
@@ -514,7 +503,6 @@
                     tools:layout_editor_absoluteY="110dp" />
 
                 <TextView
-                    android:id="@+id/fee_7"
                     android:layout_width="74dp"
                     android:layout_height="26dp"
                     android:layout_marginLeft="20dp"
@@ -527,7 +515,6 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/addBtn_7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -544,7 +531,6 @@
                 tools:paddingBottom="5dp" />
 
             <ImageView
-                android:id="@+id/pic_img107"
                 android:layout_width="162dp"
                 android:layout_height="221dp"
                 android:layout_marginStart="200dp"
