@@ -16,6 +16,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_rounded"
         android:orientation="vertical"
         android:padding="10dp">
 
@@ -249,6 +250,8 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
+
+
         <fragment
             android:id="@+id/frgMenu"
             android:name="com.example.proyecto.fragmentos.MenuFragment"

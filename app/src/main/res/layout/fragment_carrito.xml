@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +11,8 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/radius_perfil"
+    android:background="#EEEEEE"
+    android:padding="10dp"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -190,17 +192,369 @@
         </LinearLayout>
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="389dp"
+            android:layout_height="231dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/background_carro"
+            android:elevation="3dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="40dp"
+                android:text="LAPTOP ASUS E410MA-202 BLUE, CELERON N4020, 4GB, 128GB EMMC, 14'' HD. "
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.036"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="$"
+                    android:textColor="#3F51B5"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="47dp"
+                    tools:layout_editor_absoluteY="110dp" />
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="800.00"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="110dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/blue_botton"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="20dp"
+                android:text="+Añadir"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                tools:paddingBottom="5dp" />
+
+            <ImageView
+                android:id="@+id/pic_img103"
+                android:layout_width="162dp"
+                android:layout_height="221dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-200dp"
+                app:srcCompat="@drawable/laptop_1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="389dp"
+            android:layout_height="231dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/background_carro"
+            android:elevation="3dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="40dp"
+                android:text="LAPTOP CHUWI HEROBOOK PRO+, CELERON J3450, 8GB, SSD 256GB, 13.3'' IPS"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.036"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="$"
+                    android:textColor="#3F51B5"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="47dp"
+                    tools:layout_editor_absoluteY="110dp" />
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="700.00"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="110dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/blue_botton"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="20dp"
+                android:text="+Añadir"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                tools:paddingBottom="5dp" />
+
+            <ImageView
+                android:id="@+id/pic_img104"
+                android:layout_width="162dp"
+                android:layout_height="221dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-200dp"
+                app:srcCompat="@drawable/laptop_2" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="389dp"
+            android:layout_height="231dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/background_carro"
+            android:elevation="3dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="40dp"
+                android:text="MAINBOARD GIGABYTE B365M DS3H, LGA1151"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.036"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="$"
+                    android:textColor="#3F51B5"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="47dp"
+                    tools:layout_editor_absoluteY="110dp" />
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="120.00"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="110dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/blue_botton"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="20dp"
+                android:text="+Añadir"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                tools:paddingBottom="5dp" />
+
+            <ImageView
+                android:id="@+id/pic_img105"
+                android:layout_width="162dp"
+                android:layout_height="221dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-200dp"
+                app:srcCompat="@drawable/main_1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="389dp"
+            android:layout_height="231dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/background_carro"
+            android:elevation="3dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="40dp"
+                android:text="MAINBOARD ASROCK Z490 VELOCITA LGA 1200"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.036"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="$"
+                    android:textColor="#3F51B5"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="47dp"
+                    tools:layout_editor_absoluteY="110dp" />
+
+                <TextView
+                    android:layout_width="74dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="300.00"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="77dp"
+                    tools:layout_editor_absoluteY="110dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/blue_botton"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="20dp"
+                android:text="+Añadir"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                tools:paddingBottom="5dp" />
+
+            <ImageView
+                android:id="@+id/pic_img106"
+                android:layout_width="162dp"
+                android:layout_height="221dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="-200dp"
+                app:srcCompat="@drawable/main_2" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
     <Button
-        android:id="@+id/button"
-        android:layout_width="174dp"
+        android:id="@+id/logBtnIngresar"
+        android:layout_width="245dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="120dp"
-        android:text="Carro de compras"
-        android:background="@drawable/boton_comprar"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_rounded"
+        android:text="Comprar"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
 
 
 
-</FrameLayout>
+</androidx.core.widget.NestedScrollView>
