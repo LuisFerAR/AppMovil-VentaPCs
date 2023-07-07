@@ -10,9 +10,9 @@ import android.os.Bundle;
 import com.example.proyecto.fragmentos.CarritoFragment;
 import com.example.proyecto.fragmentos.CartasFragment;
 import com.example.proyecto.fragmentos.ConfiguracionFragment;
-import com.example.proyecto.fragmentos.UbicanosFragment;
 import com.example.proyecto.R;
 import com.example.proyecto.clases.Menu;
+import com.example.proyecto.fragmentos.UbicanosFragment;
 
 public class MenuActivity extends AppCompatActivity implements Menu {
     Fragment[] fragments;

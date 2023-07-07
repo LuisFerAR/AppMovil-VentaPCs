@@ -250,13 +250,11 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
-
-
         <fragment
             android:id="@+id/frgMenu"
             android:name="com.example.proyecto.fragmentos.MenuFragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="95dp"
             tools:layout="@layout/fragment_menu" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
