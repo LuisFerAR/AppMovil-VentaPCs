@@ -16,11 +16,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:layout_margin="20dp"
             android:gravity="center">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#070606"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
                 android:background="@drawable/text_rounded_border"
                 android:text="@string/frgCfgLblInformaciondelaCuenta"
                 android:textSize="20sp"/>
@@ -52,13 +55,16 @@
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
                 android:text="@string/frgCfgBtnSeguridadSesion" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:background="@drawable/text_rounded_border"
-                android:textColor="#070606"
+                android:textStyle="bold"
                 android:text="@string/frgCfgLblAcciones"
-                android:textSize="20sp"/>
+                android:textColor="#070606"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/frgCtgBtnAgregarCuenta"
@@ -79,6 +85,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/text_rounded_border"
                 android:textColor="#070606"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
                 android:text="@string/frgCfgLblSoporte"
                 android:textSize="20sp"/>
 
