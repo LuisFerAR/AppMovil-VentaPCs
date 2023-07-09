@@ -216,6 +216,87 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
 
     private boolean validarFormulario() {
         //Se realiza la validacion del formulario(pendiente por tiempo para ustedes)
+
+        String dni = txtDni.getText().toString().trim();
+        String nombre = txtNombre.getText().toString().trim();
+        String apellidos = txtApellido.getText().toString().trim();
+        String fechaNac = txtFechaNac.getText().toString().trim();
+        String correo = txtCorreo.getText().toString().trim();
+        String clave = txtClave.getText().toString().trim();
+        int idDistrito = cboDistritos.getSelectedItemPosition();
+
+        //VALIDAR DNI
+        if (dni.isEmpty()) {
+            txtDni.setError("Ingrese el DNI");
+            txtDni.requestFocus();
+            return false;
+        } else if (!dni.matches("\\d+")) {
+            txtDni.setError("El DNI debe contener solo números");
+            txtDni.requestFocus();
+            return false;
+        } else  if (dni.length() != 8) {
+            txtDni.setError("El DNI debe tener exactamente 8 números");
+            txtDni.requestFocus();
+            return false;
+        }
+
+        // VALIDAR NOMBRE
+        if (nombre.isEmpty()) {
+            txtNombre.setError("Ingrese el nombre");
+            txtNombre.requestFocus();
+            return false;
+        }else  if (!nombre.matches("[a-zA-Z]+")) {
+            txtNombre.setError("El nombre debe contener solo letras");
+            txtNombre.requestFocus();
+            return false;
+        }
+
+
+        // VALIDAR APELLIDOS
+        if (apellidos.isEmpty()) {
+            txtApellido.setError("Ingrese los apellidos");
+            txtApellido.requestFocus();
+            return false;
+        } else if (!apellidos.matches("[a-zA-Z]+")) {
+            txtApellido.setError("El apellido debe contener solo letras");
+            txtApellido.requestFocus();
+            return false;
+        }
+
+        // VALIDAR FECHA
+        if (fechaNac.isEmpty()) {
+            txtFechaNac.requestFocus();
+            txtFechaNac.setError("Seleccione la fecha de nacimiento");
+            return false;
+        } else {
+            txtFechaNac.setError(null);
+        }
+
+        // VALIDAR CORREO
+        if (correo.isEmpty()) {
+            txtCorreo.requestFocus();
+            txtCorreo.setError("Ingrese el correo electrónico");
+            return false;
+        } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
+            txtCorreo.setError("Ingrese un correo electrónico válido");
+            txtCorreo.requestFocus();
+            return false;
+        }
+
+
+        // VALIDAR CONTRASEÑA
+        if (clave.isEmpty()) {
+            txtClave.setError("Ingrese la contraseña");
+            txtClave.requestFocus();
+            return false;
+            // Validar que la contraseña cumple con los requisitos
+        } else  if (!clave.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@#$%^&+=]).+$")) {
+            txtClave.setError("La contraseña debe tener al menos una letra minúscula, una letra mayúscula, un carácter especial y un número");
+            txtClave.requestFocus();
+            return false;
+        }
+
+
         return true;
     }
 
