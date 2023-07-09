@@ -33,7 +33,7 @@
 
     <!-- Para el subtitulo de Informacion de cuenta -->
 
-    <string name="frgCfgLblInformaciondelaCuenta">Informacion de la Cuenta</string>
+    <string name="frgCfgLblInformaciondelaCuenta">Modo administrador</string>
     <string name="frgCfgBtnAdministracionCuenta">Administracion de la cuenta</string>
     <string name="frgCfgBtnNotificaciones">Notificaciones</string>
     <string name="frgCfgBtnPrivacidadDatos">Privacidad de Datos</string>
@@ -57,10 +57,10 @@
     <string name="frgUbcBtnSeguimiento">Seguimiento</string>
 
     <!-- CARRO -->
-    <string name="lbl_titulo">Venta de Autos</string>
+    <string name="lbl_titulo">Partes de computadora</string>
     <string name="lbl_marca">Marca</string>
     <string name="lbl_modelo">Modelo</string>
-    <string name="lbl_placa">Placa</string>
+    <string name="lbl_placa">Codigo</string>
     <string name="lbl_precio">Precio</string>
     <string name="agr_btn_elegir">Elegir ... </string>
     <string name="agr_btn_registrar">Registrar</string>

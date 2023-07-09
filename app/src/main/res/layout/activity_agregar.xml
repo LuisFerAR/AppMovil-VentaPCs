@@ -15,12 +15,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/lbl_titulo"
-            android:textColor="#FF1100"
             android:textStyle="bold"
             android:gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="26sp"/>
+            android:layout_marginBottom="20dp"
+            android:textSize="30sp"/>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="800px"
             android:layout_height="wrap_content"
@@ -85,7 +84,7 @@
                 android:id="@+id/agr_iv_foto_auto"
                 android:layout_width="200dp"
                 android:layout_height="150dp"
-                android:src="@mipmap/ic_launcher">
+                android:src="@mipmap/ic_launcher">>
             </ImageView>
             <Button
                 android:layout_gravity="center"
