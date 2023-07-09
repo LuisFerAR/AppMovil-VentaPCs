@@ -36,15 +36,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     CheckBox chkRecordar;
     TextView lblRegistrar;
 
-
     final private String urlLogin = "http://appmovilxddd.000webhostapp.com/webServices/iniciarSesion.php";
-   //final private String urlLogin = "http://proyecto-yugioh.atwebpages.com/webServices/iniciarSesion.php";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         txtCorreo = findViewById(R.id.logTxtCorreo);
         txtClave = findViewById(R.id.logTxtClave);
         btnIngresar = findViewById(R.id.logBtnIngresar);
@@ -55,14 +51,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         btnIngresar.setOnClickListener(this);
         btnSalir.setOnClickListener(this);
         lblRegistrar.setOnClickListener(this);
-        //VALIDAR SI SE RECORDO SESION
+        //validar si se recordo sesion
         yugioh yugioh = new yugioh(getApplicationContext());
         if(yugioh.recordoUsuario()){
             iniciarSesion(yugioh.buscarCampo("CORREO"), yugioh.buscarCampo("CLAVE"), true);
         }
     }
+
     @Override
-    public void onClick(View view){
+    public void onClick(View view) {
         switch(view.getId()){
             case R.id.logBtnIngresar:
                 iniciarSesion(txtCorreo.getText().toString(), txtClave.getText().toString(), false);
@@ -73,20 +70,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             case R.id.logLblRegistro:
                 registrar();
                 break;
-
         }
     }
 
     private void iniciarSesion(String correo, String clave, boolean recordo) {
-        Hash hash =  new Hash();
+        Hash hash = new Hash();
         clave = recordo == true ? clave : hash.StringToHash(clave, "SHA1");
         AsyncHttpClient ahcLogin = new AsyncHttpClient();
         RequestParams params = new RequestParams();
         params.add("correo", correo);
         params.add("clave", clave);
-
-
-        ahcLogin.post(urlLogin, params, new BaseJsonHttpResponseHandler(){
+        ahcLogin.post(urlLogin, params, new BaseJsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, String rawJsonResponse, Object response) {
                 if(statusCode == 200){
@@ -115,14 +109,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 }
                                 startActivity(iBienvenida);
 
-                            }else{
-                                Toast.makeText(getApplicationContext(), "ERROR: usuario o clave incorrecta", Toast.LENGTH_LONG).show();
+
+                            }
+                            else{
+                                Toast.makeText(getApplicationContext(),"ERROR: usuario o clave incorrecta",
+                                        Toast.LENGTH_LONG).show();
                             }
                         }
                         else{
-                            Toast.makeText(getApplicationContext(), "ERROR al iniciar sesion", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(),"ERROR: al iniciar sesión",
+                                    Toast.LENGTH_LONG).show();
                         }
-                    }catch (JSONException | ParseException e){
+                    } catch (JSONException | ParseException e) {
                         throw new RuntimeException(e);
                     }
                 }
@@ -139,15 +137,37 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             }
         });
 
-    }
-    private void registrar() {
-        Intent iRegistro = new Intent(this, RegistroActivity.class);
-        startActivity(iRegistro);
+        /*if(correo.equals("cuto@upn.edu.pe") && clave.equals("e05adfb80b6cc009a848215b506ae63f6fd05b97")){
+            Intent iBienvenida = new Intent(this, BienvenidaActivity.class);
+            iBienvenida.putExtra("nombre", "Cuto");
+            if(chkRecordar.isChecked()){
+                yugioh yugioh = new yugioh(getApplicationContext());
+                yugioh.agregarUsuario(1, correo, clave);
+            }
+            startActivity(iBienvenida);
+        }
+        else{
+            Toast.makeText(this, "Usuario o clase incorrecta", Toast.LENGTH_SHORT).show();
+        }*/
     }
 
     private void salir() {
         //limpiar temporales o cerrar archivos abiertos
         //validar si hay algo pendiente
-        System.exit(0);
+        System.exit(1);
+    }
+
+
+    private void registrar() {
+        Intent iRegistro = new Intent(this, RegistroActivity.class);
+        startActivity(iRegistro);
     }
 }
+
+
+
+
+
+
+
+

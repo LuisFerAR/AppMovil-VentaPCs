@@ -13,7 +13,6 @@ public class CargaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carga);
-
         Thread tMain = new Thread(){
             @Override
             public void run() {

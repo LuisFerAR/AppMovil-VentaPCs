@@ -189,7 +189,7 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
                             Toast.makeText(getApplicationContext(), "Usuario Registrado", Toast.LENGTH_LONG).show();
                             Intent login = new Intent(getApplicationContext(), LoginActivity.class);
                             try {
-                                Thread.sleep(2000);
+                                Thread.sleep(3000);
                             } catch (InterruptedException e){
                                 throw new RuntimeException(e);
                             }
@@ -197,10 +197,8 @@ public class RegistroActivity extends AppCompatActivity implements View.OnClickL
                             finish();
 
                         }
-                        else{
+                        else
                             Toast.makeText(getApplicationContext(), "Error al  Registrar", Toast.LENGTH_LONG).show();
-                        }
-
                     }
                 }
 
