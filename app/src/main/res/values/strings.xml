@@ -56,6 +56,19 @@
     <string name="frgUbcBtnNavegador">Navegador Web</string>
     <string name="frgUbcBtnSeguimiento">Seguimiento</string>
 
+    <!-- CARRO -->
+    <string name="lbl_titulo">Venta de Autos</string>
+    <string name="lbl_marca">Marca</string>
+    <string name="lbl_modelo">Modelo</string>
+    <string name="lbl_placa">Placa</string>
+    <string name="lbl_precio">Precio</string>
+    <string name="agr_btn_elegir">Elegir ... </string>
+    <string name="agr_btn_registrar">Registrar</string>
+    <string name="agr_btn_mostrar">Mostrar</string>
+    <string name="edi_btn_actualizar">Actualizar</string>
+    <string name="edi_btn_eliminar">Eliminar</string>
+    <string name="edi_btn_regresar">Regresar</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
