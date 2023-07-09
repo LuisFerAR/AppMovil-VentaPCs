@@ -8,15 +8,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#EEEEEE"
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/lbl_titulo"
-            android:layout_margin="10dp"
-            android:textSize="24sp"
-            android:textColor="#FF1100"
+            android:layout_margin="20dp"
+            android:textSize="28sp"
             android:textStyle="bold"
             android:gravity="center_horizontal"/>
         <androidx.recyclerview.widget.RecyclerView
